@@ -1,0 +1,26 @@
+<script>
+
+
+    import {trpc} from "$lib/api/trpc/client";
+    import {QueryClientProvider} from "@tanstack/svelte-query";
+
+    export let data;
+
+    $:queryClient = trpc.hydrateFromServer(data.trpc)
+</script>
+
+<QueryClientProvider client={queryClient}>
+    <div class="app">
+        <slot/>
+    </div>
+</QueryClientProvider>
+
+<style>
+    .app {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+
+</style>
