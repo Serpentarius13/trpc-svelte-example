@@ -23,7 +23,6 @@
 	"type": "module",
 	"dependencies": {
 		"@tanstack/svelte-query": "^5.17.9",
-		"@trpc/server": "^10.45.0",
 		"trpc-svelte-query": "^2.0.5",
 		"zod": "^3.22.4"
 	}

@@ -1,1 +1,1 @@
-export { HelloEntity } from "./src/hello/hello.entity";
+export { HelloEntity } from "./hello/hello.entity";

@@ -1,6 +1,6 @@
 <script>
 
-    import {trpc} from "$lib/api/trpc/client";
+    import {trpc} from "$lib/api/trpc/trpc.client";
 
 
     export let data;

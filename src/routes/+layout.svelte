@@ -1,7 +1,5 @@
 <script>
-
-
-    import {trpc} from "$lib/api/trpc/client";
+    import {trpc} from "$lib/api/trpc/trpc.client";
     import {QueryClientProvider} from "@tanstack/svelte-query";
 
     export let data;
@@ -14,13 +12,3 @@
         <slot/>
     </div>
 </QueryClientProvider>
-
-<style>
-    .app {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-
-
-</style>

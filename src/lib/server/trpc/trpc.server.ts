@@ -7,3 +7,5 @@ export const trpcServer = createTRPCSvelteServer({
   router: trpcRouter,
   createContext,
 });
+
+export type TrpcServer = typeof trpcServer;

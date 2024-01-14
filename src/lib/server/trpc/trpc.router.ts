@@ -5,4 +5,4 @@ export const trpcRouter = router({
   Hello: HelloEntity,
 });
 
-export type TrpcServer = typeof trpcRouter;
+export type TrpcRouter = typeof trpcRouter;
